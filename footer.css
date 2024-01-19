@@ -1,0 +1,105 @@
+footer{
+    padding: 70px 0;
+    background-color: var(--secondary-color);
+}
+footer h2{
+    font-size: 50px;
+    text-align: center;
+}
+.gridContainer{
+    margin: 60px auto;
+    width: 1500px;
+    max-width: 90%; /*Automatisches schrumpfen
+    */
+    /*background-color: gray; Zum testen damit es Visuel sichtbar wird*/
+    /*Als Grid Display deklarieren*/
+    display: grid;
+    /*4 Gleich große Bereiche erzeugen*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;/*fr=fraction also ein Bereich*/
+    grid-template-rows: 300px 300px; /* Zwei Rows jeweils 300 px Hoch*/
+    gap: 15px;
+    /*
+    Nachdem Grid Area angelegt wurde unten bei .gridItem kann man die template areas
+    einstellen. Hier für werden 2 Strings erstellt in dem man die oben definierten
+    4 Spalten und 2 Reihen einbaut.
+    item1 geht über 2 Spalten also nimmt es 2 Spalten platz
+    item5 genau so in der zweiten Reihe und
+    item3 nimmt 1 spalte aber 2 Reihen ein 
+    */
+    grid-template-areas: 
+    "item1 item1 item2 item3"
+    "item4 item5 item5 item3";
+}
+.gridItem{
+    background-color: var(--light-secondary-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap:50px
+}
+.gridItem img{
+    height: 150px;
+    width: 150px;
+}
+#item1{
+    grid-area: item1;
+}
+#item2{
+    grid-area: item2;
+    flex-direction: column;
+    gap: 10px;
+}
+#item3{
+    grid-area: item3;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;    
+}
+#item4{
+    grid-area: item4;
+    flex-direction: column;
+    gap: 10px;
+}
+#item5{
+    grid-area: item5;
+}
+@media(max-width:1500px){
+    .gridContainer{
+        grid-template-columns: 1fr 1fr 1fr;/*fr=fraction also ein Bereich*/
+    grid-template-rows: 300px 300px 300px; /* Zwei Rows jeweils 300 px Hoch*/
+    gap: 15px;
+    grid-template-areas: 
+    "item1 item1 item2"
+    "item4 item5 item5"
+    "item3 item3 item3";
+    }
+}
+@media(max-width:900px){
+    .gridContainer{
+        grid-template-columns: 1fr 1fr;/*fr=fraction also ein Bereich*/
+    grid-template-rows: auto auto auto auto; /* Zwei Rows jeweils 300 px Hoch*/
+    gap: 15px;
+    grid-template-areas: 
+    "item1 item1"
+    "item5 item5"
+    "item2 item4"
+    "item3 item3";
+    }
+}
+@media(max-width:650px){
+    footer h2{
+        font-size: 9vw;
+    }
+    .gridItem{
+        padding: 20px;
+    }
+    .gridItem img{
+        height: 100px;
+        width: 100px;
+    }
+    .gridItem h3{
+        font-size: 24px;
+    }
+}

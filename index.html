@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=,, initial-scale=1.0">
+    <!--Mehrere einzelne CSS pro Section-->
     <link rel="stylesheet" href="general_settings.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="footer.css">
     <!--Hamburger Menue Icon @google.fonts.com/icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Portfolio</title>
@@ -21,8 +24,8 @@
                 <input type="checkbox" id="togglebutton">                
                 <ul>
                     <li><a href="#aboutMeSection">Über mich</a></li>
-                    <li><a href="">Dienstleistungen</a></li>
-                    <li><a href="">Mehr Informationen</a></li>
+                    <li><a href="#servicesSection">Dienstleistungen</a></li>
+                    <li><a href="#moreInfoSection">Mehr Informationen</a></li>
                 </ul>
             </nav>
 
@@ -53,15 +56,20 @@
     </section>
     
     <section id="servicesSection">
-        <h2>Dienstleistungen</h2>
+        <!--&shy=Silbentrennung wenn die Breite der Seite zu klein wird an dieser stelle-->
+        <h2>Dienst&shyleistungen</h2>
         <div class="flexContainer">
             <div class="card">
                 <h3>Beratung</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis dolores officia cum quo laboriosam maiores impedit tenetur, deleniti minus excepturi laudantium repellendus eum facere, ex mollitia voluptatibus unde explicabo eius.</p>
                 <a href="https://github.com/SinanDmrr">Buchen</a>
+            </div>
+            <div class="card">
                 <h3>Beratung</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis dolores officia cum quo laboriosam maiores impedit tenetur, deleniti minus excepturi laudantium repellendus eum facere, ex mollitia voluptatibus unde explicabo eius.</p>
                 <a href="https://github.com/SinanDmrr">Buchen</a>
+            </div>
+            <div class="card">
                 <h3>Beratung</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis dolores officia cum quo laboriosam maiores impedit tenetur, deleniti minus excepturi laudantium repellendus eum facere, ex mollitia voluptatibus unde explicabo eius.</p>
                 <a href="https://github.com/SinanDmrr">Buchen</a>
@@ -69,6 +77,36 @@
         </div>
     </section>
     
-    <footer></footer>
+    <footer id="moreInfoSection">
+        <h2>Mehr Informationen</h2>
+        <div class="gridContainer">
+            <div class="gridItem" id="item1">
+                <img src="img/instagram_512x512.png" alt="insta">
+                <div>
+                    <h3>Instagram</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur corrupti nisi, nemo provident placeat.</p>
+                </div>                
+            </div>
+            <div class="gridItem" id="item2">
+                <img src="img/telegram_512x512.png" alt="Telegram">
+                <h3>Telegram</h3>
+            </div>
+            <div class="gridItem" id="item3">
+                <h3>Kontakt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, atque! Error rem nobis vel distinctio quos harum, cumque, assumenda, dignissimos ullam esse eius similique voluptatibus laborum iusto. Totam corrupti iure, fuga ut recusandae necessitatibus possimus.</p>
+            </div>
+            <div class="gridItem" id="item4">
+                <img src="img/twitter_512x512.png" alt="Telegram">
+                <h3>Twitter</h3>
+            </div>
+            <div class="gridItem" id="item5">
+                <img src="img/youtube_512x512.png" alt="YouTube">
+                <div>
+                    <h3>YouTube</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur corrupti nisi, nemo provident placeat.</p>
+                </div>             
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
