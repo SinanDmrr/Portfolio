@@ -37,3 +37,19 @@
     margin-top: 25px;
     color: var(--secondary-text-color);
   }
+
+/*
+    Da verschiedene Elemente für kleinere Endgeräte zu groß sein können wie z.B.
+    h1 font-size wird ein Media Querie erstellt, welcher die Werte überschreibt,
+    wenn eine bestimmte bedingung eintrifft z.B. Viewport breite 800px ab da gilt das:    
+*/
+@media(max-width:800px){
+    h1{
+        /*mit vw machen wir es Responsiv weil es sich an den Viewport anpasst*/
+        font-size: 9vw;
+        text-align: center;
+    }
+    .subheading{
+        text-align: center;
+    }
+}

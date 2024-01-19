@@ -24,6 +24,18 @@ header{
 .circle{    
     height: 500px;
     width: 500px;
+    /* 
+        Nur durch Height und Width hat der Kreis einen Festen Wert was dafür sorgt das 
+        keine gleichmäßigen Seitenverhältnisse der Seite entsprechend bei behalten werden können
+        d.h. wenn die seite kleiner wird, wird der Kreis zu einem Oval er verschiebt sich
+
+        um da abhilfe zu schaffen setzen wir die Max-Width und Max-Height auf 80vw
+        vw = Viewport also das sichtbare Fenster d.h. die maximale breite und höhe sollen
+        80% von dem sichtbaren Fenster sein, wird das Fenster nun kleiner wird auch hier der Wert angepasst
+    */
+    max-width: 80vw;
+    max-height: 80vw;
+
     /* Mit hidden wird das Bild auf 600px x 600px geschnitten  */
     overflow:hidden;
     border-radius: 50%;
@@ -40,7 +52,7 @@ header{
 }
 
 nav{
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 nav ul{
@@ -75,4 +87,44 @@ nav a:hover::after{
     width: 100%;
     /* Mit der Transition sorgt man dafür das der Effekt des ausfahrens stattfindet */
     transition: 150ms ease-in-out;
+}
+/*Checkbox ausblenden*/
+#togglebutton{
+    display: none;
+}
+
+/*Um Präzise ein Label anzusprächen nutzt man den Attributselektor mit []*/
+label[for="togglebutton"]{
+    display: none;  /*Auf größeren Geräte wird es ausgeblendet*/
+}
+
+label[for="togglebutton"] span{
+    font-size: 40px;
+}
+
+@media(max-width:800px){
+    nav{
+        position: absolute; /*Nun wird die Seite nicht nach unten geschoben wenn nav ausgeklappt wird*/
+        top: 0; /*Position oben*/
+        left: 0; /*Positon links*/
+        /*Menü hintergrundrahmen*/
+        background: var(--secondary-color); /*Farbe*/
+        padding: 15px;  /*Abstand zum ICON*/
+        border-radius: 0 0 25px 0;  /*Radius unten Rechts*/
+    }
+    label[for="togglebutton"]{
+        display: block; /*Auf kleineren Geräten wir es eingeblendet*/
+    }
+    nav ul{
+        display: none;
+    }
+    /* Mit der Pseudoklasse :checked können wir die Funktion beschreiben die geschehen soll,
+        wenn die Checkbox true ist
+        shift + alt + "+" = ~   spricht geschwister an also elemente auf der selben ebene*/
+    #togglebutton:checked ~ ul{
+        /*Durch display none blenden wir die links aus durch display flex wieder an*/
+        display: flex;
+        /*Damit die ul elemente vertikal ausgerichtet werden nicht mehr horizontal*/
+        flex-direction: column;
+    }
 }
