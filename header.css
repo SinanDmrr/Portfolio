@@ -1,0 +1,78 @@
+header{
+    padding: 100px 25px;
+    /* Flex sortiert die Elemente automatisch nebeneinander*/
+    display: flex;
+    /* Horizontal */
+    justify-content: center;
+    /* Vertikal */
+    align-items: center;
+    /* 
+        Da die Elemente nebeneinander angeordnet werden durch Flex und
+        bei kleineren Display größen diesen dann umskalieren und verschwinden
+        wird Flex-Wrap: wrap benutzt, sodass das Element nach unten springt wenn der Platz
+        zu klein wird bevor es umskaliert und verschwindet. 
+    */
+    flex-wrap: wrap;
+    /* Abstand zwischen diesem Element und dem daneben stehenden */
+    gap: 50px;
+}
+
+.headertext{
+    width: 850px;
+}
+
+.circle{    
+    height: 500px;
+    width: 500px;
+    /* Mit hidden wird das Bild auf 600px x 600px geschnitten  */
+    overflow:hidden;
+    border-radius: 50%;
+    border: 15px solid var(--main-brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.circle img{
+    /* Bedenke die kürzere Seite des Bildes mit 100% anzugeben */
+    width: 100%;
+    /* Um das Bild zu versetzen um Circle padding-top: 80px;*/
+}
+
+nav{
+    margin-bottom: 120px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    /* Abstand zwischen den Links */
+    gap: 20px;
+}
+
+nav a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+
+nav a:hover{
+    color: var(--text-color);
+}
+
+nav a::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* Erst beim Hovern soll die Linie ausgefahren werden */
+nav a:hover::after{
+    width: 100%;
+    /* Mit der Transition sorgt man dafür das der Effekt des ausfahrens stattfindet */
+    transition: 150ms ease-in-out;
+}
