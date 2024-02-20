@@ -6,18 +6,20 @@ footer h2{
     font-size: 50px;
     text-align: center;
 }
+
+
 .gridContainer{
-    margin: 60px auto;
+    margin: 50px auto;
     width: 1500px;
-    max-width: 90%; /*Automatisches schrumpfen
+    max-width: 80%; /*Automatisches schrumpfen
     */
     /*background-color: gray; Zum testen damit es Visuel sichtbar wird*/
     /*Als Grid Display deklarieren*/
     display: grid;
     /*4 Gleich große Bereiche erzeugen*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;/*fr=fraction also ein Bereich*/
+    grid-template-columns: 1fr 1fr 1fr ;/*fr=fraction also ein Bereich*/
     grid-template-rows: 300px 300px; /* Zwei Rows jeweils 300 px Hoch*/
-    gap: 15px;
+    gap: 25px;
     /*
     Nachdem Grid Area angelegt wurde unten bei .gridItem kann man die template areas
     einstellen. Hier für werden 2 Strings erstellt in dem man die oben definierten
@@ -26,9 +28,12 @@ footer h2{
     item5 genau so in der zweiten Reihe und
     item3 nimmt 1 spalte aber 2 Reihen ein 
     */
-    grid-template-areas: 
+    /* grid-template-areas: 
     "item1 item1 item2 item3"
-    "item4 item5 item5 item3";
+    "item4 item5 item5 item3"; */
+    grid-template-areas: 
+    "item1 item1 item2"
+    "item3 item4 item4";
 }
 .gridItem{
     background-color: var(--light-secondary-color);
@@ -50,21 +55,19 @@ footer h2{
     flex-direction: column;
     gap: 10px;
 }
-#item3{
-    grid-area: item3;
+#item4{
+    grid-area: item4;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;    
 }
-#item4{
-    grid-area: item4;
+#item3{
+    grid-area: item3;
     flex-direction: column;
     gap: 10px;
-}
-#item5{
-    grid-area: item5;
-}
+} 
+
 @media(max-width:1500px){
     .gridContainer{
         grid-template-columns: 1fr 1fr 1fr;/*fr=fraction also ein Bereich*/
@@ -72,8 +75,8 @@ footer h2{
     gap: 15px;
     grid-template-areas: 
     "item1 item1 item2"
-    "item4 item5 item5"
-    "item3 item3 item3";
+    "item4 item3 item3";
+    /* "item3 item3 item3"; */
     }
 }
 @media(max-width:900px){

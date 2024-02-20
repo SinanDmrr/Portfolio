@@ -39,7 +39,7 @@ header{
     /* Mit hidden wird das Bild auf 600px x 600px geschnitten  */
     overflow:hidden;
     border-radius: 50%;
-    border: 15px solid var(--main-brand-color);
+    border: 10px solid var(--main-brand-color);
     display: flex;
     justify-content: center;
     align-items: center;    
