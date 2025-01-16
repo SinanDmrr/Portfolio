@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #5988ff;
+$secondary-color: #57e8a2;
+$tertiary-color: #ff5959;
+$background-color: #f4f4f4;
+
+@import "./fonts.scss";
+$header-font: "Baloo 2", sans-serif;
+$header-font-weight: 700;
+$main-font: "Montserrat", sans-serif;
+$main-font-weight: 400;
+
+@mixin flex-layout($justify-content: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+//TODO wenn nicht benötigt entfernen
+@mixin circle($size: 100px, $background-color: #000) {
+  width: $size;
+  height: $size;
+  background-color: $background-color;
+  border-radius: 50%; /* Rundet die Ecken zu einem Kreis */
+  display: inline-block; /* Sicherstellen, dass der Kreis dargestellt wird */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: $main-font;
+  font-weight: $main-font-weight;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
