@@ -1,5 +1,12 @@
 # Portfolio
 
+Welcome to my portfolio repository! This project showcases my work, skills and projects that I have created during my journey as a budding frontend developer.
+
+🚀 Technologies
+Frontend: HTML5, CSS3, JavaScript, TypeScript, Angular
+Tools: SCSS, Git, Visual Studio Code
+Process models: Scrum, Kanban, waterfall model
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
 ## Development server
