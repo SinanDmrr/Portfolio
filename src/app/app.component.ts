@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { HeaderComponent } from './shared/header/header.component';

@@ -9,25 +9,33 @@ $header-font-weight: 700;
 $main-font: "Montserrat", sans-serif;
 $main-font-weight: 400;
 
-@mixin flex-layout($justify-content: center) {
-  display: flex;
-  justify-content: $justify-content;
-  align-items: center;
-}
+$first-media-max-width: 1400px;
+$second-media-max-width: 1000px;
 
-//TODO wenn nicht benötigt entfernen
-@mixin circle($size: 100px, $background-color: #000) {
-  width: $size;
-  height: $size;
-  background-color: $background-color;
-  border-radius: 50%; /* Rundet die Ecken zu einem Kreis */
-  display: inline-block; /* Sicherstellen, dass der Kreis dargestellt wird */
+$padding-100: 100px;
+$padding-48: 48px;
+$padding-24: 24px;
+
+@mixin flex-layout(
+  $justify-content: center,
+  $flex-direction: row,
+  $align-items: center
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
