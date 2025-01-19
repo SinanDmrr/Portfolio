@@ -1,18 +1,26 @@
 @use "../../../styles.scss" as *;
 
+$header-padding: 200px;
+
 header {
-  width: 100%;
-  max-width: 1920px;
-  height: 10vh;
-  padding: 10px 0;
-  position: relative;
+  position: absolute;
+  width: calc(100% - $header-padding);
+  left: 0;
+  right: 0;
+  top: 0;
   z-index: 9999;
+  margin: 0 auto;
+  padding: 12px 0;
   #head-section {
+    width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
     font-size: 1.4rem;
     font-weight: 700;
     @include flex-layout(space-between);
+
+    #header-burgermenu {
+      display: none;
+    }
   }
 
   img {
@@ -48,6 +56,26 @@ header {
 
       &:hover::after {
         transform: scaleX(1);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  $header-padding: 50px;
+  header {
+    width: calc(100% - $header-padding) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    #head-section {
+      #header-nav {
+        display: none;
+      }
+      #header-burgermenu {
+        display: block;
       }
     }
   }

@@ -1,14 +1,23 @@
-.content-wrapper {
-  //   position: relative;
+@use "../styles.scss" as *;
+
+#atf-bg {
+  width: 100%;
   max-width: 1920px;
-  padding: 0 100px;
+  height: 100vh;
   margin: 0 auto;
-  box-sizing: border-box;
   background: linear-gradient(to bottom, #ffffff, #eaefff);
+  box-sizing: border-box;
+
+  .content-wrapper {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 100px;
+    position: relative;
+  }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .content-wrapper {
-    padding: 0 50px;
+    padding: 0 20px !important;
   }
 }
