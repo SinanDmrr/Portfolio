@@ -1,16 +1,97 @@
 @use "../../styles.scss" as *;
 
-#section-header {
-  #head {
+#circles {
+  @include flex-layout(center);
+  position: relative;
+  img:nth-of-type(1) {
+    height: 15rem;
+    position: relative;
+    z-index: -10;
+    top: -7.5rem;
   }
-  #info {
-    @include flex-layout(center, column);
-    #icons {
-      @include flex-layout();
 
+  img:nth-of-type(2) {
+    position: absolute;
+    right: 25%;
+    height: 6rem;
+  }
+}
+
+#section-header {
+  @include flex-layout(space-around);
+  gap: 2rem;
+  height: 100%;
+  margin-bottom: 5rem;
+  #info {
+    height: 100%;
+    @include flex-layout(space-between, column, center);
+    h2,
+    > p {
+      text-align: center;
+      color: $primary-color;
+      font-family: $header-font;
+      font-weight: $header-font-weight;
+      font-size: 8rem;
+      line-height: 6rem;
+    }
+    > p {
+      font-size: 3rem;
+    }
+    #icons {
+      width: 100%;
+      @include flex-layout(space-between);
+      color: $primary-color;
+      font-size: 1.2rem;
       img {
         height: 2.5rem;
       }
+    }
+  }
+  #aboutme {
+    height: 100%;
+    max-width: 350px;
+    @include flex-layout(space-between, column, start);
+    gap: 2rem;
+    font-size: 1.2rem;
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      background: transparent;
+      border-radius: 12px;
+      border: $primary-color solid;
+      color: $primary-color;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  #section-header {
+    h2,
+    > p {
+      font-size: 6rem !important;
+      line-height: 5rem !important;
+    }
+    > p {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #section-header {
+    @include flex-layout(center, column);
+    h2,
+    > p {
+      font-size: 6rem !important;
+      line-height: 5rem !important;
+    }
+    > p {
+      font-size: 2rem !important;
+    }
+
+    #aboutme {
+      max-width: 450px;
+      @include flex-layout(start, column, center);
     }
   }
 }

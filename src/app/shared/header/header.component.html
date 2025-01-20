@@ -2,9 +2,9 @@
   <div id="head-section" class="padding-left-right">
     <a href=""><img src="../../../assets/images/logo.png" alt="" /></a>
     <div id="header-nav">
-      <a href="#">About me</a>
-      <a href="#">Skill set</a>
-      <a href="#">My Projects</a>
+      <a href="#aboutme-section" (click)="closeMenu()">About me</a>
+      <a href="#skillset" (click)="closeMenu()">Skill set</a>
+      <a href="#projects" (click)="closeMenu()">My Projects</a>
     </div>
     <img
       id="header-burgermenu"
@@ -28,9 +28,9 @@
       </div>
 
       <nav>
-        <a href="#" (click)="closeMenu()">About me</a>
-        <a href="#" (click)="closeMenu()">Skill set</a>
-        <a href="#" (click)="closeMenu()">My Projects</a>
+        <a href="#aboutme-section" (click)="closeMenu()">About me</a>
+        <a href="#skillset" (click)="closeMenu()">Skill set</a>
+        <a href="#projects" (click)="closeMenu()">My Projects</a>
       </nav>
     </div>
   }
