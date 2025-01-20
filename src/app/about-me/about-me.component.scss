@@ -1,0 +1,16 @@
+@use "../../styles.scss" as *;
+
+#section-header {
+  #head {
+  }
+  #info {
+    @include flex-layout(center, column);
+    #icons {
+      @include flex-layout();
+
+      img {
+        height: 2.5rem;
+      }
+    }
+  }
+}

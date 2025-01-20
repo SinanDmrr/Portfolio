@@ -13,4 +13,25 @@
       (click)="onBurgerMenuClick()"
     />
   </div>
+  @if (isMenuOpen) {
+    <div id="mobile-menu-overlay" class="menu-overlay d-none">
+      <div id="logo-nav-container">
+        <a href=""
+          ><img src="../../../assets/images/logo-blue.png" alt="Logo"
+        /></a>
+        <img
+          id="header-burgermenu"
+          src="../../../assets/images/burger-menu.png"
+          alt="Close menu"
+          (click)="onBurgerMenuClick()"
+        />
+      </div>
+
+      <nav>
+        <a href="#" (click)="closeMenu()">About me</a>
+        <a href="#" (click)="closeMenu()">Skill set</a>
+        <a href="#" (click)="closeMenu()">My Projects</a>
+      </nav>
+    </div>
+  }
 </header>
