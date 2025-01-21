@@ -1,71 +1,143 @@
 @use "../../styles.scss" as *;
 
-#circles {
+#aboutme-section {
   @include flex-layout(center);
   position: relative;
-  img:nth-of-type(1) {
-    height: 15rem;
-    position: relative;
-    z-index: -10;
-    top: -7.5rem;
-  }
-
-  img:nth-of-type(2) {
+  padding: 140px 0;
+  #circles {
     position: absolute;
-    right: 25%;
-    height: 6rem;
+    width: 100%;
+    max-width: 1920px;
+    top: -100px;
+    display: flex;
+    align-items: end;
+    img:nth-of-type(1) {
+      position: relative;
+      z-index: -10;
+      left: 50%;
+      height: 30% !important;
+    }
+    img:nth-of-type(2) {
+      position: relative;
+      left: 70%;
+      height: 15%;
+      z-index: -9;
+    }
   }
-}
 
-#section-header {
-  @include flex-layout(space-around);
-  gap: 2rem;
-  height: 100%;
-  margin-bottom: 5rem;
-  #info {
-    height: 100%;
-    width: 50%;
-    @include flex-layout(space-between, column, center);
-    h2,
-    > p {
-      text-align: center;
-      color: $primary-color;
-      font-family: $header-font;
-      font-weight: $header-font-weight;
-      font-size: 8rem;
-      line-height: 6rem;
-    }
-    > p {
-      font-size: 3rem;
-    }
-    #icons {
-      width: 100%;
-      @include flex-layout(space-between);
-      color: $primary-color;
-      font-size: 1.2rem;
-      div {
-        @include flex-layout(center, row, center);
-        gap: 1rem;
-        img {
-          height: 2.5rem;
+  #info-aboutme-container {
+    @include flex-layout(space-between);
+    max-width: 1920px;
+    padding: 0 100px;
+    gap: 1rem;
+    #info {
+      width: 45%;
+      @include flex-layout(space-between, column, center);
+      gap: 1rem;
+      h2,
+      > p {
+        text-align: center;
+        color: $primary-color;
+        font-family: $header-font;
+        font-weight: $header-font-weight;
+        font-size: 8rem;
+        line-height: 6rem;
+      }
+      > p {
+        font-size: 3rem;
+      }
+
+      #icons {
+        @include flex-layout(space-between);
+        gap: 2rem;
+        div {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          img {
+            height: 2.5rem;
+            aspect-ratio: 1/1;
+            transition: opacity 0.3s ease;
+            object-fit: contain;
+          }
+
+          img:nth-of-type(1) {
+            display: block;
+          }
+
+          img:nth-of-type(2) {
+            display: none;
+          }
+
+          &:hover {
+            img:nth-of-type(1) {
+              display: none;
+            }
+
+            img:nth-of-type(2) {
+              display: block;
+            }
+          }
         }
       }
     }
-  }
 
-  #aboutme {
-    height: 100%;
-    max-width: 350px;
-    @include flex-layout(space-between, column, start);
-    gap: 2rem;
-    font-size: 1.2rem;
-    a {
-      padding: 0.5rem 1rem;
-      font-size: 1.5rem;
-      background: transparent;
-      border-radius: 12px;
-      border: $primary-color solid;
-      color: $primary-color;
+    #aboutme {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 500px;
+      gap: 1rem;
+      font-size: 1.4rem;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        border: 2px solid $primary-color;
+        border-radius: 10px;
+        padding: 5px 10px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        transition: transform 125ms ease;
+
+        background: transparent;
+        transition: background-color 125ms ease;
+
+        p {
+          color: $primary-color;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            to right,
+            $primary-color,
+            $secondary-color
+          );
+          transition: left 125ms ease;
+          z-index: -1;
+        }
+
+        &:hover {
+          color: white;
+          transform: scale(1.2);
+          p {
+            color: white;
+          }
+        }
+
+        &:hover::before {
+          left: 0;
+        }
+      }
     }
   }
 }
@@ -98,6 +170,7 @@
     #aboutme {
       max-width: 450px;
       @include flex-layout(start, column, center);
+      padding: 0 25px;
     }
 
     #info {

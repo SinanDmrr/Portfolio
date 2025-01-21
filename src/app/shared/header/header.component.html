@@ -1,18 +1,16 @@
-<header>
-  <div id="head-section" class="padding-left-right">
-    <a href=""><img src="../../../assets/images/logo.png" alt="" /></a>
-    <div id="header-nav">
-      <a href="#aboutme-section" (click)="closeMenu()">About me</a>
-      <a href="#skillset" (click)="closeMenu()">Skill set</a>
-      <a href="#projects" (click)="closeMenu()">My Projects</a>
-    </div>
-    <img
-      id="header-burgermenu"
-      src="../../../assets/images/burger-menu.png"
-      alt=""
-      (click)="onBurgerMenuClick()"
-    />
+<header class="content-wrapper">
+  <a href=""><img src="../../../assets/images/logo.png" alt="" /></a>
+  <div id="header-nav">
+    <a href="#aboutme-section" (click)="closeMenu()">About me</a>
+    <a href="#skillset" (click)="closeMenu()">Skill set</a>
+    <a href="#projects" (click)="closeMenu()">My Projects</a>
   </div>
+  <img
+    id="header-burgermenu"
+    src="../../../assets/images/burger-menu.png"
+    alt=""
+    (click)="onBurgerMenuClick()"
+  />
   @if (isMenuOpen) {
     <div id="mobile-menu-overlay" class="menu-overlay d-none">
       <div id="logo-nav-container">

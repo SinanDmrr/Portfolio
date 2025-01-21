@@ -1,5 +1,5 @@
 $primary-color: #5988ff;
-$secondary-color: #57e8a2;
+$secondary-color: #4630eb;
 $tertiary-color: #ff5959;
 $background-color: #f4f4f4;
 
@@ -8,15 +8,6 @@ $header-font: "Baloo 2", sans-serif;
 $header-font-weight: 700;
 $main-font: "Montserrat", sans-serif;
 $main-font-weight: 400;
-
-$first-media-max-width: 1400px;
-$second-media-max-width: 1000px;
-
-$padding-100: 100px;
-$padding-48: 48px;
-$padding-24: 24px;
-//TODO LÖschen vor projektabgabe
-$border-test: solid 1px black;
 
 @mixin flex-layout(
   $justify-content: center,
@@ -27,6 +18,14 @@ $border-test: solid 1px black;
   flex-direction: $flex-direction;
   justify-content: $justify-content;
   align-items: $align-items;
+}
+
+.content-wrapper {
+  padding: 0 100px;
+}
+
+.d-none {
+  display: none;
 }
 
 * {
