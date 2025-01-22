@@ -1,28 +1,40 @@
-<header class="content-wrapper">
-  <a href=""><img src="../../../assets/images/logo.png" alt="" /></a>
+<header class="padding-left-right-100">
+  <a href=""
+    ><img
+      [src]="
+        isMenuOpen
+          ? '../../../assets/images/logo-blue.png'
+          : '../../../assets/images/logo.png'
+      "
+      alt="Logo"
+  /></a>
+
   <div id="header-nav">
     <a href="#aboutme-section" (click)="closeMenu()">About me</a>
     <a href="#skillset" (click)="closeMenu()">Skill set</a>
     <a href="#projects" (click)="closeMenu()">My Projects</a>
   </div>
-  <img
-    id="header-burgermenu"
-    src="../../../assets/images/burger-menu.png"
-    alt=""
+
+  <div
+    class="menu-icon d-none"
+    [class.open]="isMenuOpen"
     (click)="onBurgerMenuClick()"
-  />
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
   @if (isMenuOpen) {
-    <div id="mobile-menu-overlay" class="menu-overlay d-none">
+    <div
+      id="mobile-menu-overlay"
+      [class.open]="isMenuOpen"
+      class="menu-overlay padding-left-right-100"
+    >
       <div id="logo-nav-container">
         <a href=""
           ><img src="../../../assets/images/logo-blue.png" alt="Logo"
         /></a>
-        <img
-          id="header-burgermenu"
-          src="../../../assets/images/burger-menu.png"
-          alt="Close menu"
-          (click)="onBurgerMenuClick()"
-        />
       </div>
 
       <nav>
