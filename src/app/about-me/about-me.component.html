@@ -6,8 +6,10 @@
 
   <div id="info-aboutme-container">
     <div id="info">
-      <h2>Let's work together</h2>
-      <p>I am</p>
+      <h2>
+        <div>{{ "about-me.header" | translate }}</div>
+      </h2>
+      <p>{{ "about-me.secondheader" | translate }}</p>
       <div id="icons">
         <div>
           <img
@@ -19,7 +21,7 @@
             class="d-none"
             alt="location icon hover"
           />
-          <p>located in Cologne</p>
+          <p>{{ "about-me.located" | translate }}</p>
         </div>
         <div>
           <img src="../../assets/images/icon-laptop.png" alt="laptop icon" />
@@ -28,7 +30,7 @@
             class="d-none"
             alt="laptop icon hover"
           />
-          <p>open to work remote</p>
+          <p>{{ "about-me.remote" | translate }}</p>
         </div>
         <div>
           <img
@@ -40,21 +42,17 @@
             class="d-none"
             alt="suitcase icon"
           />
-          <p>open to relocate</p>
+          <p>{{ "about-me.relocate" | translate }}</p>
         </div>
       </div>
     </div>
 
     <div id="aboutme">
-      <p>
-        I am a Front-end developer based in Munich, Germany. I enjoy helping
-        designers and companies bring their ideas into real life. I am looking
-        forward to continuing my developer career with a job in a junior web
-        developer position. My ability to solve complex problems and my passion
-        for programming make me a valuable member for your team.
-      </p>
-      <p>If you think I'd be a good match for your projects, contact me!</p>
-      <a href="#contact" class="button"><p>Send a message</p></a>
+      <p>{{ "about-me.firstparagraph" | translate }}</p>
+      <p>{{ "about-me.secondparagraph" | translate }}</p>
+      <a href="#contact" class="primary-btn"
+        ><p>{{ "about-me.sendmessage" | translate }}</p></a
+      >
     </div>
   </div>
 </section>

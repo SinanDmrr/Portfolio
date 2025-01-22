@@ -1,16 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective,
+} from '@ngx-translate/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, CommonModule],
+  imports: [CommonModule, TranslatePipe, TranslateDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  currentLanguage = 'en';
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang('en');
+  }
   onBurgerMenuClick(): void {
     this.isMenuOpen = !this.isMenuOpen;
     this.toggleBodyScroll();
@@ -27,5 +35,10 @@ export class HeaderComponent {
     } else {
       document.body.style.overflow = 'auto';
     }
+  }
+
+  toggleLanguage(): void {
+    this.currentLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
+    this.translate.use(this.currentLanguage);
   }
 }

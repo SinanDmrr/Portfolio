@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { HeaderComponent } from './shared/header/header.component';
@@ -26,14 +25,7 @@ import {
 export class AppComponent {
   title = 'Sinan Demir Frontend Developer';
 
-  constructor(
-    private translate: TranslateService,
-    private titleService: Title,
-  ) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
-
+  constructor(private titleService: Title) {
     this.titleService.setTitle(this.title);
   }
 }

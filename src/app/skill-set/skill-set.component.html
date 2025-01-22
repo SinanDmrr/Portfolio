@@ -1,5 +1,5 @@
 <section id="skillset">
-  <h2>Skill set</h2>
+  <h2>{{ "skill-set.header" | translate }}</h2>
   <div id="skills">
     @for (skill of skills; track skill.name) {
       <div class="skill">
@@ -7,7 +7,7 @@
         <p>{{ skill.name }}</p>
       </div>
     } @empty {
-      <p>Keine Skills vorhanden.</p>
+      <p>{{ "skill-set.noskills" | translate }}</p>
     }
   </div>
 </section>

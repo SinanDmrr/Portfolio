@@ -1,0 +1,48 @@
+{
+  "about-me": {
+    "header": "Lasst uns gemeinsam arbeiten",
+    "secondheader": "Ich bin",
+    "located": "in Troisdorf ansässig",
+    "remote": "offen für Remote",
+    "relocate": "offen für Standortwechsel",
+    "firstparagraph": "Ich bin ein Fachinformatiker für Anwendungsentwicklung (IHK) im Bereich der Frontend Entwicklung aus Troisdorf, Deutschland. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Entwickler-Karriere mit einer Stelle als Junior Frontend Developer fortzusetzen. Meine Fähigkeit, komplexe Probleme zu lösen und meine Leidenschaft für das Programmieren machen mich zu einem wertvollen Mitglied für Ihr Team.",
+    "secondparagraph": "Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+    "sendmessage": "Jetzt kontaktieren",
+    "title": "Übersetzung Deutsch"
+  },
+  "above-the-fold": {
+    "greeting": "Hallo! Ich bin {{name}}",
+    "title": "Übersetzung Deutsch"
+  },
+  "contact": {
+    "hello": "hello {{value}}",
+    "title": "Übersetzung Deutsch"
+  },
+  "main-component": {
+    "hello": "hello {{value}}",
+    "title": "Übersetzung Deutsch"
+  },
+  "my-projects": {
+    "hello": "hello {{value}}",
+    "title": "Übersetzung Deutsch"
+  },
+  "references": {
+    "hello": "hello {{value}}",
+    "title": "Übersetzung Deutsch"
+  },
+  "skill-set": {
+    "header": "Fähigkeiten",
+    "noskills": "Keine Skills vorhanden.",
+    "title": "Übersetzung Deutsch"
+  },
+  "footer": {
+    "hello": "hello {{value}}",
+    "title": "Übersetzung Deutsch"
+  },
+  "header": {
+    "aboutme": "Über mich",
+    "skillset": "Fähigkeiten",
+    "myprojects": "Projekte",
+    "title": "Übersetzung Deutsch"
+  }
+}

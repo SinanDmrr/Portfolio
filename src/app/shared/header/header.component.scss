@@ -12,6 +12,54 @@ header {
   font-weight: 700;
   @include flex-layout(space-between);
 
+  #language-switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #ddd;
+      border-radius: 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+      span {
+        font-size: 12px;
+        color: #333;
+        user-select: none;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background: #5988ff;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        transition: all 0.3s ease;
+      }
+    }
+
+    input[type="checkbox"]:checked + label::before {
+      transform: translateX(30px);
+    }
+  }
+
   #header-nav {
     @include flex-layout(space-between);
     gap: 2rem;

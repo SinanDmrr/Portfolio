@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skill-set',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe, TranslateDirective],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
 })

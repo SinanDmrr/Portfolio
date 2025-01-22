@@ -1,0 +1,48 @@
+{
+  "about-me": {
+    "header": "Let's work together",
+    "secondheader": "I am",
+    "located": "located in Troisdorf",
+    "remote": "open to work remote",
+    "relocate": "open to relocate",
+    "firstparagraph": "I am a Front-end developer based in Troisdorf, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position. My ability to solve complex problems and my passion for programming make me a valuable member for your team.",
+    "secondparagraph": "If you think I'd be a good match for your projects, contact me!",
+    "sendmessage": "Send a message",
+    "title": "Translation Demo"
+  },
+  "above-the-fold": {
+    "greeting": "Hello! I am {{name}}",
+    "title": "Translation Demo"
+  },
+  "contact": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo"
+  },
+  "main-component": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo"
+  },
+  "my-projects": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo"
+  },
+  "references": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo"
+  },
+  "skill-set": {
+    "header": "Skill set",
+    "noskills": "No skills available.",
+    "title": "Translation Demo"
+  },
+  "footer": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo"
+  },
+  "header": {
+    "aboutme": "About me",
+    "skillset": "Skill set",
+    "myprojects": "My Projects",
+    "title": "Translation Demo"
+  }
+}
