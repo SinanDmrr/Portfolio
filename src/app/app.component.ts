@@ -25,7 +25,13 @@ import {
 export class AppComponent {
   title = 'Sinan Demir Frontend Developer';
 
-  constructor(private titleService: Title) {
+  constructor(
+    private titleService: Title,
+    private translate: TranslateService,
+  ) {
     this.titleService.setTitle(this.title);
+
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang('en');
   }
 }

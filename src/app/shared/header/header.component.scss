@@ -34,11 +34,11 @@ header {
       justify-content: space-between;
       align-items: center;
       padding: 0 5px;
-      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
 
       span {
         font-size: 12px;
-        color: #333;
+        color: #000000;
         user-select: none;
       }
 
@@ -47,7 +47,7 @@ header {
         position: absolute;
         width: 26px;
         height: 26px;
-        background: #5988ff;
+        background: $primary-color;
         border-radius: 50%;
         top: 2px;
         left: 2px;
@@ -57,6 +57,9 @@ header {
 
     input[type="checkbox"]:checked + label::before {
       transform: translateX(30px);
+    }
+    input[type="checkbox"]:checked + label span {
+      color: #ffffff; // Die Farbe, die du haben möchtest
     }
   }
 

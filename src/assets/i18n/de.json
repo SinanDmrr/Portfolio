@@ -22,8 +22,15 @@
     "hello": "hello {{value}}",
     "title": "Übersetzung Deutsch"
   },
-  "my-projects": {
-    "hello": "hello {{value}}",
+  "projects": {
+    "header": "Meine Projekte",
+    "headertext": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "firstprojecttext": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "secondprojecttext": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "thirdprojecttext": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+    "noprojects": "Keine Projekte vorhanden.",
+    "noinfo": "Keine Informationen enthalten",
+    "livetest": "Jetzt testen",
     "title": "Übersetzung Deutsch"
   },
   "references": {

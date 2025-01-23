@@ -9,19 +9,6 @@
       alt="Logo"
   /></a>
 
-  <div id="language-switch">
-    <input
-      type="checkbox"
-      id="lang-toggle"
-      (change)="toggleLanguage()"
-      [checked]="currentLanguage === 'de'"
-    />
-    <label for="lang-toggle">
-      <span style="z-index: 1">EN</span>
-      <span style="z-index: 1">DE</span>
-    </label>
-  </div>
-
   <div id="header-nav">
     <a href="#aboutme-section" (click)="closeMenu()">{{
       "header.aboutme" | translate
@@ -32,6 +19,25 @@
     <a href="#projects" (click)="closeMenu()">{{
       "header.myprojects" | translate
     }}</a>
+
+    <div id="language-switch">
+      <input
+        type="checkbox"
+        id="lang-toggle"
+        (change)="toggleLanguage()"
+        [checked]="currentLanguage === 'de'"
+      />
+      <label for="lang-toggle">
+        <span
+          style="z-index: 1"
+          [ngStyle]="{
+            color: currentLanguage === 'en' ? '#ffffff' : '#000000',
+          }"
+          >EN</span
+        >
+        <span style="z-index: 1">DE</span>
+      </label>
+    </div>
   </div>
 
   <div
@@ -57,9 +63,15 @@
       </div>
 
       <nav>
-        <a href="#aboutme-section" (click)="closeMenu()">About me</a>
-        <a href="#skillset" (click)="closeMenu()">Skill set</a>
-        <a href="#projects" (click)="closeMenu()">My Projects</a>
+        <a href="#aboutme-section" (click)="closeMenu()">{{
+          "header.aboutme" | translate
+        }}</a>
+        <a href="#skillset" (click)="closeMenu()">{{
+          "header.skillset" | translate
+        }}</a>
+        <a href="#projects" (click)="closeMenu()">{{
+          "header.myprojects" | translate
+        }}</a>
       </nav>
     </div>
   }

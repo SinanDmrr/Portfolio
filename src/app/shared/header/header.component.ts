@@ -15,10 +15,7 @@ import {
 export class HeaderComponent {
   isMenuOpen = false;
   currentLanguage = 'en';
-  constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-  }
+  constructor(private translate: TranslateService) {}
   onBurgerMenuClick(): void {
     this.isMenuOpen = !this.isMenuOpen;
     this.toggleBodyScroll();

@@ -22,8 +22,15 @@
     "hello": "hello {{value}}",
     "title": "Translation Demo"
   },
-  "my-projects": {
-    "hello": "hello {{value}}",
+  "projects": {
+    "header": "My Projects",
+    "headertext": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "firstprojecttext": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+    "secondprojecttext": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "thirdprojecttext": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    "noprojects": "No projects available.",
+    "noinfo": "No information contained",
+    "livetest": "Test it now",
     "title": "Translation Demo"
   },
   "references": {

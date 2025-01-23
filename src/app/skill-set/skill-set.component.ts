@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
+import { ISkill } from '../interfaces/iskill';
 
 @Component({
   selector: 'app-skill-set',
@@ -9,7 +10,7 @@ import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
   styleUrl: './skill-set.component.scss',
 })
 export class SkillSetComponent {
-  skills: InterfaceSkill[] = [
+  skills: ISkill[] = [
     { img: '../../assets/images/angular-icon.png', name: 'Angular' },
     { img: '../../assets/images/typescript-icon.png', name: 'TypeScript' },
     { img: '../../assets/images/javascript.icon.png', name: 'JavaScript' },
@@ -31,9 +32,4 @@ export class SkillSetComponent {
     { img: '../../assets/images/kanban-icon.png', name: 'Kanban' },
     { img: '../../assets/images/grow-icon.png', name: 'Growth mindset' },
   ];
-}
-
-interface InterfaceSkill {
-  img: string;
-  name: string;
 }
