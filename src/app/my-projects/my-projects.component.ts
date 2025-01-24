@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 import { IProject } from '../interfaces/iproject';
+import { SingleProjectComponent } from './single-project/single-project.component';
 
 @Component({
   selector: 'app-my-projects',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe, TranslateDirective, SingleProjectComponent],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss',
 })

@@ -1,0 +1,61 @@
+@use "../../../styles.scss" as *;
+
+#project {
+  @include flex-layout(center);
+  gap: 5rem;
+  margin-bottom: 100px;
+  flex-direction: row;
+
+  &.reverse {
+    flex-direction: row-reverse; // Umgekehrtes Layout
+    #information {
+      align-items: end;
+
+      .description {
+        color: black;
+        text-align: end;
+      }
+    }
+  }
+
+  img {
+    min-height: 40%;
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.2);
+    transition: transform 125ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  #information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 45%;
+    color: $primary-color;
+
+    h3 {
+      font-size: 2.5rem;
+      font-family: $header-font;
+      font-weight: $header-font-weight;
+      margin: 0;
+      line-height: 1;
+    }
+    .description {
+      color: black;
+    }
+
+    .button-container {
+      @include flex-layout(start);
+      gap: 2rem;
+
+      a {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}

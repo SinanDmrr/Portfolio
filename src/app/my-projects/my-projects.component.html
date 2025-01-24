@@ -12,40 +12,11 @@
   </div>
   <div id="projects">
     @for (project of projects; track $index) {
-      <div id="project">
-        <a [href]="project.liveTestPath"><img [src]="project.img" alt="" /></a>
-        <div id="information">
-          <h3>{{ project.header }}</h3>
-          <p>{{ project.skills.join(" | ") }}</p>
-          @if ($index === 0) {
-            <p class="description">
-              {{ "projects.firstprojecttext" | translate }}
-            </p>
-          } @else if ($index === 1) {
-            <p class="description">
-              {{ "projects.secondprojecttext" | translate }}
-            </p>
-          } @else if ($index === 2) {
-            <p class="description">
-              {{ "projects.thirdprojecttext" | translate }}
-            </p>
-          } @else {
-            <p class="description">{{ "projects.noinfo" | translate }}</p>
-          }
-
-          <div class="button-container">
-            <a
-              [href]="project.liveTestPath"
-              target="_blank"
-              class="primary-btn"
-              >{{ "projects.livetest" | translate }}</a
-            >
-            <a [href]="project.githubPath" target="_blank" class="primary-btn"
-              >GitHub</a
-            >
-          </div>
-        </div>
-      </div>
+      <app-single-project
+        [project]="project"
+        [index]="$index"
+        [isReverse]="$index % 2 !== 0"
+      ></app-single-project>
     } @empty {
       <p>{{ "projects.noprojects" | translate }}</p>
     }
