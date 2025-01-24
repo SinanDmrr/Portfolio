@@ -13,7 +13,7 @@
   <div id="projects">
     @for (project of projects; track $index) {
       <div id="project">
-        <img [src]="project.img" alt="" />
+        <a [href]="project.liveTestPath"><img [src]="project.img" alt="" /></a>
         <div id="information">
           <h3>{{ project.header }}</h3>
           <p>{{ project.skills.join(" | ") }}</p>

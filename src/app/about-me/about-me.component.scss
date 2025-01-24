@@ -43,6 +43,8 @@
         font-weight: $header-font-weight;
         font-size: 5rem;
         line-height: 4.5rem;
+
+        text-shadow: $text-shadow;
       }
       > p {
         font-size: 3rem;
@@ -98,6 +100,10 @@
       width: 500px;
       gap: 1rem;
       font-size: 1.2rem;
+      h3 {
+        color: $primary-color;
+        text-shadow: $text-shadow;
+      }
     }
   }
 }
