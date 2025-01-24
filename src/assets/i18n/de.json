@@ -35,7 +35,12 @@
     "title": "Übersetzung Deutsch"
   },
   "references": {
-    "hello": "hello {{value}}",
+    "header": "Teamplay benötigt?",
+    "secondheader": "Hier könnt ihr das Feedback meiner Kollegen über mich sehen",
+    "project": "Projekt",
+    "firstfeedback": "Sinan ist ein zuverlässiger und freundlicher Mensch. Arbeitet strukturiert und schreibt einen klaren Code. Ich kann sie als Kollegin sehr empfehlen.",
+    "secondfeedback": "Sinan ist ein zuverlässiger und freundlicher Mensch. Arbeitet strukturiert und schreibt einen klaren Code. Ich kann sie als Kollegin sehr empfehlen.",
+    "thirdfeedback": "Sinan ist ein zuverlässiger und freundlicher Mensch. Arbeitet strukturiert und schreibt einen klaren Code. Ich kann sie als Kollegin sehr empfehlen.",
     "title": "Übersetzung Deutsch"
   },
   "skill-set": {

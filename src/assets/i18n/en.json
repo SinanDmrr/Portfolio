@@ -35,7 +35,12 @@
     "title": "Translation Demo"
   },
   "references": {
-    "hello": "hello {{value}}",
+    "header": "Need a teamplayer?",
+    "secondheader": "Here what my colleagues said about me",
+    "project": "Project",
+    "firstfeedback": "Sinan is a reliable and friendly person. Work in a structured way and write a clear code. I  highly recommend her as a colleague.",
+    "secondfeedback": "Sinan is a reliable and friendly person. Work in a structured way and write a clear code. I  highly recommend her as a colleague.",
+    "thirdfeedback": "Sinan is a reliable and friendly person. Work in a structured way and write a clear code. I  highly recommend her as a colleague.",
     "title": "Translation Demo"
   },
   "skill-set": {
