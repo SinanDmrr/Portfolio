@@ -16,7 +16,19 @@
     "title": "Translation Demo"
   },
   "contact": {
-    "hello": "hello {{value}}",
+    "header": "Contact",
+    "secondheader": "Got a problem to solve?",
+    "paragraph": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "secondparagraph": "Need a Frontend developer?",
+    "thirdparagraph": "Contact me!",
+    "nameplaceholder": "Your name",
+    "emailplaceholder": "Your e-mail",
+    "messageplaceholder": "Write your message here...",
+    "messageerror": "Please enter a message (at least 10 characters long)",
+    "firstcheckbox": "I've read the ",
+    "secondcheckbox": "privacy policy ",
+    "thirdcheckbox": "and agree to the processing of my data as outlined.",
+    "btntext": "Senden",
     "title": "Translation Demo"
   },
   "main-component": {
@@ -49,7 +61,8 @@
     "title": "Translation Demo"
   },
   "footer": {
-    "hello": "hello {{value}}",
+    "imprint": "Imprint ",
+    "privacypolicy": "Privacy Policy",
     "title": "Translation Demo"
   },
   "header": {

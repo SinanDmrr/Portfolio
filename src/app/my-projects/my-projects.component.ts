@@ -6,7 +6,7 @@ import { SingleProjectComponent } from './single-project/single-project.componen
 @Component({
   selector: 'app-my-projects',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective, SingleProjectComponent],
+  imports: [TranslatePipe, SingleProjectComponent],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss',
 })

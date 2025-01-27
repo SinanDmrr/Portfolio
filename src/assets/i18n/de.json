@@ -16,7 +16,19 @@
     "title": "Übersetzung Deutsch"
   },
   "contact": {
-    "hello": "hello {{value}}",
+    "header": "Kontakt",
+    "secondheader": "Sie müssen ein Problem lösen?",
+    "paragraph": "Kontaktieren Sie mich gerne über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "secondparagraph": "Benötigen Sie einen Frontend-Entwickler?",
+    "thirdparagraph": "Kontaktieren Sie mich!",
+    "nameplaceholder": "Ihr Name",
+    "emailplaceholder": "Ihre E-Mail",
+    "messageplaceholder": "Schreiben Sie Ihre Nachricht hier...",
+    "messageerror": "Bitte gebe erst eine Nachricht an (min. 10 Zeichen lang)",
+    "firstcheckbox": "Ich habe den Text gelesen",
+    "secondcheckbox": "Datenschutzbestimmungen",
+    "thirdcheckbox": "und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "btntext": "Senden",
     "title": "Übersetzung Deutsch"
   },
   "main-component": {
@@ -49,7 +61,8 @@
     "title": "Übersetzung Deutsch"
   },
   "footer": {
-    "hello": "hello {{value}}",
+    "imprint": "Impressum",
+    "privacypolicy": "Datenschutzerklärung",
     "title": "Übersetzung Deutsch"
   },
   "header": {

@@ -2,7 +2,6 @@
 
 #section-references {
   width: 100%;
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(45deg, $primary-color, $secondary-color);
@@ -29,7 +28,6 @@
 
   #references {
     width: 100%;
-    max-width: 1920px;
     @include flex-layout(center);
     flex-wrap: wrap;
     gap: 2rem;

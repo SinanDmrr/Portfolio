@@ -1,3 +1,86 @@
 <section id="contact">
-  <p>contact works!</p>
+  <div id="circles">
+    <img src="../../assets/images/go-up.png" alt="" (click)="scrollToTop()" />
+    <img src="../../assets/images/Ellipse-aboutme-small.png" alt="" />
+    <img src="../../assets/images/Ellipse-aboutme-small.png" alt="" />
+    <img src="../../assets/images/Ellipse-aboutme-small.png" alt="" />
+  </div>
+  <h2>{{ "contact.header" | translate }}</h2>
+  <div class="padding-left-right-100">
+    <div id="info">
+      <h3>{{ "contact.secondheader" | translate }}</h3>
+      <p>{{ "contact.paragraph" | translate }}</p>
+      <p>
+        {{ "contact.secondparagraph" | translate }}
+        <span>{{ "contact.thirdparagraph" | translate }}</span>
+      </p>
+    </div>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <label for="name"></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value=""
+        [placeholder]="'contact.nameplaceholder' | translate"
+        [(ngModel)]="contactData.name"
+        required
+      />
+
+      <label for="email"></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        [placeholder]="'contact.emailplaceholder' | translate"
+        [(ngModel)]="contactData.email"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      />
+
+      <label for="message"></label>
+      <textarea
+        #message="ngModel"
+        id="message"
+        name="message"
+        [placeholder]="'contact.messageplaceholder' | translate"
+        [(ngModel)]="contactData.message"
+        [ngClass]="{ invalid: message.invalid && message.touched }"
+        minlength="10"
+        required
+      ></textarea>
+      @if (!message.valid && contactForm.submitted) {
+        <span>{{ "contact.messageerror" | translate }}</span>
+      }
+
+      <div id="checkbox">
+        <input
+          type="checkbox"
+          id="checkbox"
+          name="checkbox"
+          [value]=""
+          [(ngModel)]="isChecked"
+          required
+        />
+        <label for="checkbox">
+          {{ "contact.firstcheckbox" | translate }}
+          <span
+            ><a href="" target="_blank">{{
+              "contact.secondcheckbox" | translate
+            }}</a></span
+          >
+          {{ "contact.thirdcheckbox" | translate }}
+        </label>
+      </div>
+
+      <button
+        class="primary-btn"
+        type="submit"
+        [ngClass]="{ 'primary-btn': isChecked, 'disabled-btn': !isChecked }"
+        [disabled]="!isChecked"
+      >
+        {{ "contact.btntext" | translate }}
+      </button>
+    </form>
+  </div>
 </section>

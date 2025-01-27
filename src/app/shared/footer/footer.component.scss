@@ -1,0 +1,41 @@
+@use "../../../styles.scss" as *;
+
+#footer-section {
+  width: 100%;
+  @include flex-layout(center);
+  background: linear-gradient(45deg, $primary-color, $secondary-color);
+  padding: 2rem;
+  color: white;
+
+  #footer-content {
+    @include flex-layout(space-between);
+    width: 100%;
+    max-width: 1920px;
+
+    img {
+      height: 3rem;
+      width: auto;
+    }
+
+    #name-policy-container {
+      @include flex-layout(center, column);
+      #legal-notice {
+        @include flex-layout(center);
+        gap: 1rem;
+
+        a {
+          color: white;
+        }
+      }
+    }
+
+    #linking-section {
+      @include flex-layout(center);
+      gap: 1rem;
+      img {
+        width: 2rem;
+        height: auto;
+      }
+    }
+  }
+}

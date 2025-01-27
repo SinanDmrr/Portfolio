@@ -72,6 +72,25 @@
         <a href="#projects" (click)="closeMenu()">{{
           "header.myprojects" | translate
         }}</a>
+
+        <div id="language-switch">
+          <input
+            type="checkbox"
+            id="lang-toggle"
+            (change)="toggleLanguage()"
+            [checked]="currentLanguage === 'de'"
+          />
+          <label for="lang-toggle">
+            <span
+              style="z-index: 1"
+              [ngStyle]="{
+                color: currentLanguage === 'en' ? '#ffffff' : '#000000',
+              }"
+              >EN</span
+            >
+            <span style="z-index: 1">DE</span>
+          </label>
+        </div>
       </nav>
     </div>
   }
