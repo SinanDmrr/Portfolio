@@ -1,0 +1,28 @@
+@use "../../styles.scss" as *;
+
+#imprint-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 112px);
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid black;
+
+  #imprint {
+    h1 {
+      font-family: $header-font;
+      font-weight: $header-font-weight;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-family: $header-font;
+      font-weight: $header-font-weight;
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+  }
+}

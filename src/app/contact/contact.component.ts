@@ -50,6 +50,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      console.log(this.contactData);
       ngForm.resetForm();
     }
   }
@@ -59,7 +60,7 @@ export class ContactComponent {
 
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Optional: Für sanftes Scrollen
+      behavior: 'smooth',
     });
   }
 }

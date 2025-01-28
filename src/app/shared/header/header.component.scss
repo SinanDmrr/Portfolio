@@ -12,6 +12,21 @@ header {
   font-weight: 700;
   @include flex-layout(space-between);
 
+  &.main-page-header {
+    background-color: transparent;
+    position: absolute;
+  }
+
+  &.secondary-page-header {
+    background: linear-gradient(45deg, $primary-color, $secondary-color);
+    position: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    a {
+      color: white;
+    }
+  }
+
   #language-switch {
     position: relative;
     width: 60px;
@@ -59,7 +74,7 @@ header {
       transform: translateX(30px);
     }
     input[type="checkbox"]:checked + label span {
-      color: #ffffff; // Die Farbe, die du haben möchtest
+      color: #ffffff;
     }
   }
 
@@ -69,7 +84,6 @@ header {
     a {
       position: relative;
       transition: transform 0.3s ease;
-
       text-shadow: $text-shadow;
       &:hover {
         transform: scale(1.1);

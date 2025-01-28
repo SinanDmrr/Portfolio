@@ -1,4 +1,10 @@
-<header class="padding-left-right-100">
+<header
+  class="padding-left-right-100"
+  [ngClass]="{
+    'main-page-header': isMainPage,
+    'secondary-page-header': !isMainPage,
+  }"
+>
   <a href=""
     ><img
       [src]="

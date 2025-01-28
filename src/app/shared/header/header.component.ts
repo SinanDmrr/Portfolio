@@ -1,21 +1,23 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import {
-  TranslateService,
-  TranslatePipe,
-  TranslateDirective,
-} from '@ngx-translate/core';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   isMenuOpen = false;
   currentLanguage = 'en';
-  constructor(private translate: TranslateService) {}
+  isMainPage: boolean = true;
+
+  constructor(
+    private translate: TranslateService,
+    private router: Router,
+  ) {}
   onBurgerMenuClick(): void {
     this.isMenuOpen = !this.isMenuOpen;
     this.toggleBodyScroll();
@@ -37,5 +39,14 @@ export class HeaderComponent {
   toggleLanguage(): void {
     this.currentLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
     this.translate.use(this.currentLanguage);
+  }
+
+  ngOnInit(): void {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // Prüfe, ob die aktuelle Route "/" ist
+        this.isMainPage = event.url === '/' || event.url === '';
+      }
+    });
   }
 }
