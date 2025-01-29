@@ -31,8 +31,8 @@
       position: absolute;
     }
     img:nth-child(1) {
-      bottom: 2%;
-      left: 40%;
+      bottom: 1%;
+      left: 10%;
     }
     img:nth-child(2) {
       top: 10%;
@@ -43,13 +43,13 @@
       left: 5%;
     }
   }
-  div {
-    @include flex-layout(space-between);
+  #info-form {
+    @include flex-layout(center);
     gap: 2rem;
     #info {
       @include flex-layout(flex-start, column, start);
-      width: 40%;
-
+      width: 45%;
+      min-width: 300px;
       gap: 1rem;
       h3 {
         color: $primary-color;
@@ -70,6 +70,7 @@
     form {
       @include flex-layout(start, column);
       width: 50%;
+      min-width: 300px;
       #checkbox {
         display: flex;
         gap: 1rem;
@@ -145,7 +146,7 @@
           }
 
           textarea {
-            min-height: 4rem;
+            min-height: 2rem;
             max-height: 20rem;
             resize: vertical;
           }
@@ -178,6 +179,47 @@
           bottom: -0.9rem;
           left: 1rem;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #circles {
+    img:nth-child(1) {
+      bottom: 1%;
+      left: 10%;
+    }
+    img:nth-child(2) {
+      top: 45% !important;
+      right: 5% !important;
+    }
+    img:nth-child(3) {
+      top: 1% !important;
+      left: 1% !important;
+    }
+  }
+
+  h2 {
+    font-size: 3rem !important;
+  }
+
+  #info-form {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-self: center !important;
+    align-items: center !important;
+
+    #info {
+      justify-content: center !important;
+      align-items: center !important;
+      width: 70% !important;
+
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
       }
     }
   }

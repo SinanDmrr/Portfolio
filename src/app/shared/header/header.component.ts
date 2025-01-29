@@ -44,8 +44,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Prüfe, ob die aktuelle Route "/" ist
-        this.isMainPage = event.url === '/' || event.url === '';
+        const urlWithoutFragment = event.url.split('#')[0];
+        this.isMainPage =
+          urlWithoutFragment === '/' || urlWithoutFragment === '';
       }
     });
   }

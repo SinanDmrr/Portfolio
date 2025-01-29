@@ -26,7 +26,7 @@
     "emailplaceholder": "Ihre E-Mail",
     "emailerror": "Ihre E-Mail wird benötigt",
     "messageplaceholder": "Schreiben Sie Ihre Nachricht hier...",
-    "messageerror": "Bitte gebe erst eine Nachricht an (min. 10 Zeichen lang)",
+    "messageerror": "Bitte gebe erst eine Nachricht an",
     "firstcheckbox": "Ich habe den Text gelesen",
     "secondcheckbox": "Datenschutzbestimmungen",
     "thirdcheckbox": "und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
@@ -71,6 +71,18 @@
     "title": "Übersetzung Deutsch"
   },
   "header": {
+    "aboutme": "Über mich",
+    "skillset": "Fähigkeiten",
+    "myprojects": "Projekte",
+    "title": "Übersetzung Deutsch"
+  },
+  "imprint": {
+    "header": "Impressum",
+    "contact": "Kontakt",
+    "reference": "Quelle",
+    "title": "Übersetzung Deutsch"
+  },
+  "privacypolicy": {
     "aboutme": "Über mich",
     "skillset": "Fähigkeiten",
     "myprojects": "Projekte",

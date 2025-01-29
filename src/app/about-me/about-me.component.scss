@@ -3,7 +3,7 @@
 #aboutme-section {
   @include flex-layout(center);
   position: relative;
-  padding: 140px 0;
+  padding: 7rem 0;
   #circles {
     position: absolute;
     width: 100%;
@@ -14,12 +14,12 @@
     img:nth-of-type(1) {
       position: relative;
       z-index: -10;
-      left: 50%;
+      left: 30%;
       height: 30% !important;
     }
     img:nth-of-type(2) {
       position: relative;
-      left: 70%;
+      left: 45%;
       height: 15%;
       z-index: -9;
     }
@@ -27,23 +27,22 @@
 
   #info-aboutme-container {
     @include flex-layout(center);
+    flex-wrap: wrap;
     max-width: 1920px;
-    padding: 0 100px;
-    gap: 5rem;
+    gap: 3rem;
     #info {
-      width: 45%;
       @include flex-layout(space-between, column, center);
       gap: 1rem;
       h2,
       > p {
-        min-width: 400px;
+        min-width: 300px;
+        width: 90%;
         text-align: center;
         color: $primary-color;
         font-family: $header-font;
         font-weight: $header-font-weight;
         font-size: 5rem;
         line-height: 4.5rem;
-
         text-shadow: $text-shadow;
       }
       > p {
@@ -97,7 +96,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      width: 500px;
+      min-width: 300px;
+      width: 90%;
       gap: 1rem;
       font-size: 1.2rem;
       h3 {
@@ -122,6 +122,24 @@
 }
 
 @media (max-width: 850px) {
+  #icons {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+  #circles {
+    img:nth-of-type(1) {
+      position: relative;
+      z-index: -10;
+      left: 30%;
+      height: 30% !important;
+    }
+    img:nth-of-type(2) {
+      left: 0 !important;
+      height: 0 !important;
+    }
+  }
   #section-header {
     @include flex-layout(center, column);
     h2,
@@ -134,6 +152,7 @@
     }
 
     #aboutme {
+      min-width: 310px;
       max-width: 450px;
       @include flex-layout(start, column, center);
       padding: 0 25px;
@@ -153,15 +172,19 @@
 }
 
 @media (max-width: 450px) {
-  #section-header {
-    @include flex-layout(center, column);
-    h2,
-    > p {
-      font-size: 4.5rem !important;
-      line-height: 3.5rem !important;
+  #info-aboutme-container {
+    #info {
+      h2,
+      > p {
+        font-size: 2.5rem !important;
+        line-height: 2rem !important;
+      }
+      > p {
+        font-size: 1.5rem !important;
+      }
     }
-    > p {
-      font-size: 1.8rem !important;
+    #aboutme {
+      font-size: 1rem !important;
     }
   }
 }

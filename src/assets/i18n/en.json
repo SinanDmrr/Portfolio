@@ -26,7 +26,7 @@
     "emailplaceholder": "Your e-mail",
     "emailerror": "Your email is required",
     "messageplaceholder": "Write your message here...",
-    "messageerror": "Please enter a message (at least 10 characters long)",
+    "messageerror": "Please enter a message",
     "firstcheckbox": "I've read the ",
     "secondcheckbox": "privacy policy ",
     "thirdcheckbox": "and agree to the processing of my data as outlined.",
@@ -75,5 +75,17 @@
     "skillset": "Skill set",
     "myprojects": "My Projects",
     "title": "Translation Demo"
+  },
+  "imprint": {
+    "header": "Imprint",
+    "contact": "Contact",
+    "reference": "Reference",
+    "title": "Übersetzung Deutsch"
+  },
+  "privacypolicy": {
+    "aboutme": "Über mich",
+    "skillset": "Fähigkeiten",
+    "myprojects": "Projekte",
+    "title": "Übersetzung Deutsch"
   }
 }

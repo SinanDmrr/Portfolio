@@ -1,5 +1,5 @@
 <header
-  class="padding-left-right-100"
+  class="padding-left-right"
   [ngClass]="{
     'main-page-header': isMainPage,
     'secondary-page-header': !isMainPage,
@@ -62,12 +62,6 @@
       [class.open]="isMenuOpen"
       class="menu-overlay padding-left-right-100"
     >
-      <div id="logo-nav-container">
-        <a href=""
-          ><img src="../../../assets/images/logo-blue.png" alt="Logo"
-        /></a>
-      </div>
-
       <nav>
         <a href="#aboutme-section" (click)="closeMenu()">{{
           "header.aboutme" | translate
