@@ -139,7 +139,7 @@
   }
 
   #person {
-    width: 25rem !important;
+    width: 45rem !important;
     height: auto !important;
     left: 50%;
     transform: translateX(-50%);
@@ -172,6 +172,10 @@
     top: -20% !important;
     left: -15% !important;
   }
+  #person {
+    width: 35rem !important;
+    height: auto !important;
+  }
 
   #hero-text {
     span {
@@ -193,6 +197,10 @@
     .fat-font {
       font-size: 4rem !important;
     }
+  }
+  #person {
+    width: 25rem !important;
+    height: auto !important;
   }
 }
 

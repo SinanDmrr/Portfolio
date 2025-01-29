@@ -80,12 +80,99 @@
     "header": "Imprint",
     "contact": "Contact",
     "reference": "Reference",
-    "title": "Übersetzung Deutsch"
+    "title": "Translation Demo"
   },
   "privacypolicy": {
-    "aboutme": "Über mich",
-    "skillset": "Fähigkeiten",
-    "myprojects": "Projekte",
-    "title": "Übersetzung Deutsch"
+    "header": "Privacy Policy",
+    "header1.1": "1. Data protection at a glance",
+    "header1.2": "General information",
+    "paragraph1.1": "The following information provides a simple overview of what happens to your personal data when you visit this website. Visit this website. Personal data is all data with which you can be personally identified. Detailed information on the subject of data protection can be found in our data protection listed under this text.",
+    "datacollection": {
+      "title": "Data collection on this website",
+      "responsible": "Who is responsible for the data collection on this website?",
+      "processing": "The data processing on this website is carried out by the website operator. You can find the contact details of the operator in the section 'Notice to the responsible entity' in this privacy policy."
+    },
+    "datacollection2": {
+      "how": "How do we collect your data?",
+      "manual": "Your data is collected by you directly providing it to us. This may include data you enter into a contact form, for example.",
+      "automatic": "Other data is collected automatically or with your consent when you visit the website by our IT systems. This mainly involves technical data (e.g., internet browser, operating system, or time of page view). This data collection occurs automatically as soon as you enter the website."
+    },
+    "datacollection3": {
+      "purpose": "What do we use your data for?",
+      "usage": "Some of the data is collected to ensure the proper provision of the website. Other data can be used to analyze your user behavior. If contracts can be concluded or initiated via the website, the transmitted data will also be processed for contract offers, orders, or other service requests.",
+      "rights": "What rights do you have regarding your data?",
+      "rightsInfo": "You have the right to request free information about the origin, recipients, and purpose of your stored personal data at any time. You also have the right to request correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time in the future. You also have the right to request restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to file a complaint with the competent supervisory authority.",
+      "contact": "For this and other questions related to data protection, you can contact us at any time."
+    },
+    "hosting": {
+      "title": "2. Hosting",
+      "provider": "We host the content of our website with the following provider:",
+      "providerName": "All-Inkl",
+      "providerDetails": "The provider is ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). You can find more details in the privacy policy of All-Inkl:",
+      "providerLink": "https://all-inkl.com/datenschutzinformationen/",
+      "legalBasis": "The use of All-Inkl is based on Art. 6 Para. 1 lit. f GDPR. We have a legitimate interest in ensuring the reliable display of our website.",
+      "consents": "If consent has been requested, processing will take place exclusively based on Art. 6 Para. 1 lit. a GDPR and § 25 Para. 1 TDDDG, insofar as the consent includes the storage of cookies or access to information on the user's end device (e.g. device fingerprinting) within the meaning of TDDDG. Consent can be revoked at any time.",
+      "title2": "Order Processing",
+      "info": "We have concluded a contract for order processing (AVV) for the use of the aforementioned service. This is a contract required by data protection law, ensuring that the service provider processes the personal data of our website visitors only according to our instructions and in compliance with the GDPR."
+    },
+    "general": {
+      "title": "3. General Information and Mandatory Information",
+      "dataprotection": "Data Protection",
+      "dataprotectionInfo1": "The operators of this site take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the legal data protection regulations as well as this privacy policy.",
+      "dataprotectionInfo2": "When you use this website, various personal data is collected. Personal data is information that can be used to identify you personally. This privacy policy explains which data we collect and how we use it. It also explains how and for what purpose this happens.",
+      "dataprotectionInfo3": "We would like to point out that data transmission over the internet (e.g., communication via email) can have security gaps. A complete protection of the data against access by third parties is not possible.",
+      "responsible": "Notice on the responsible party",
+      "responsibleInfo": "The responsible party for data processing on this website is:",
+      "contact": "Sinan Demir<br />Am Südhang 18<br />53844 Troisdorf<br />Phone: +49 (0) 157 779 294 43<br />E-mail: sinan-demir&#64;hotmail.com",
+      "responsibleExplanation": "The responsible party is the natural or legal person who alone or jointly decides on the purposes and means of processing personal data (e.g., names, email addresses, etc.)."
+    },
+    "storageDuration": {
+      "title": "Storage Duration",
+      "info": "Unless a more specific storage duration is mentioned in this privacy policy, your personal data will remain with us until the purpose for the data processing no longer applies. If you assert a legitimate request for deletion or revoke consent for data processing, your data will be deleted unless we have other legally permissible reasons to store your personal data (e.g., tax or commercial retention periods); in the latter case, deletion will occur once those reasons no longer apply."
+    },
+    "legalBasis": {
+      "title": "General Information on the Legal Basis of Data Processing on This Website",
+      "info": "If you have consented to data processing, we process your personal data based on Art. 6 (1) (a) GDPR or Art. 9 (2) (a) GDPR, if special categories of data are processed under Art. 9 (1) GDPR. In the case of explicit consent for the transfer of personal data to third countries, data processing also takes place based on Art. 49 (1) (a) GDPR. If you have consented to the storage of cookies or the access to information in your device (e.g., via device fingerprinting), data processing also takes place based on § 25 (1) TDDDG. Consent can be revoked at any time. If your data is required for the performance of a contract or for pre-contractual measures, we process your data based on Art. 6 (1) (b) GDPR. Additionally, we process your data if required for the fulfillment of a legal obligation based on Art. 6 (1) (c) GDPR. Data processing may also occur based on our legitimate interest according to Art. 6 (1) (f) GDPR. The relevant legal basis for each case will be provided in the following sections of this privacy policy."
+    },
+    "dataRecipients": {
+      "title": "Recipients of Personal Data",
+      "info": "In the course of our business activities, we work with various external parties. In some cases, it is also necessary to transfer personal data to these external parties. We will only share personal data with external parties if it is necessary for the fulfillment of a contract, if we are legally obligated to do so (e.g., sharing data with tax authorities), if we have a legitimate interest under Art. 6 (1) (f) GDPR in the transfer, or if another legal basis allows the transfer of data. When using processors, we only share personal data with our customers on the basis of a valid data processing agreement. In the case of joint processing, a joint processing agreement is signed."
+    },
+    "withdrawalOfConsent": {
+      "title": "Withdrawal of Your Consent to Data Processing",
+      "info": "Many data processing operations are only possible with your explicit consent. You can revoke any consent you have already given at any time. The legality of data processing carried out until the withdrawal remains unaffected by the revocation."
+    },
+    "objectionRight": {
+      "title": "Right to Object to Data Collection in Special Cases and to Direct Marketing (Art. 21 GDPR)",
+      "info": "IF THE DATA PROCESSING IS BASED ON ART. 6 (1) (E) OR (F) GDPR, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME, ON GROUNDS RELATING TO YOUR PARTICULAR SITUATION, TO THE PROCESSING OF YOUR PERSONAL DATA; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE LEGAL BASIS FOR THE PROCESSING CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR RELEVANT PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR RIGHTS, INTERESTS, AND FREEDOMS, OR THE PROCESSING IS NECESSARY FOR THE ESTABLISHMENT, EXERCISE, OR DEFENSE OF LEGAL CLAIMS (OBJECTION UNDER ART. 21 (1) GDPR). IF YOUR PERSONAL DATA IS BEING PROCESSED FOR THE PURPOSE OF DIRECT MARKETING, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF YOUR PERSONAL DATA FOR SUCH MARKETING PURPOSES; THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL NO LONGER BE USED FOR DIRECT MARKETING PURPOSES (OBJECTION UNDER ART. 21 (2) GDPR)."
+    },
+    "complaintRight": {
+      "title": "Right to Complain to the Supervisory Authority",
+      "info": "In case of violations of the GDPR, data subjects have the right to file a complaint with a supervisory authority, particularly in the member state of their habitual residence, place of work, or the location of the alleged violation. The right to complain is without prejudice to other administrative or judicial remedies."
+    },
+    "dataPortabilityRight": {
+      "title": "Right to Data Portability",
+      "info": "You have the right to receive data that we process based on your consent or in the fulfillment of a contract in a structured, commonly used, and machine-readable format and transmit it to you or to a third party. If you request direct transmission of the data to another controller, this will be done only if technically feasible."
+    },
+    "accessCorrectionDeletion": {
+      "title": "Access, Correction, and Deletion",
+      "info": "You have the right to request free access to your stored personal data, their origin and recipients, the purpose of processing, and if applicable, the right to correct or delete such data. You can contact us at any time for this purpose and for further questions regarding your personal data."
+    },
+    "restrictionOfProcessing": {
+      "title": "Right to Restrict Processing",
+      "info": "You have the right to request the restriction of the processing of your personal data. You can contact us at any time for this purpose. The right to restrict processing exists in the following cases:",
+      "case1": "If you dispute the accuracy of your stored personal data, we typically need time to verify this. During the verification period, you have the right to request the restriction of processing of your personal data.",
+      "case2": "If the processing of your personal data is unlawful, you may request the restriction of data processing instead of deletion.",
+      "case3": "If we no longer need your personal data, but you need it for the exercise, defense, or establishment of legal claims, you have the right to request the restriction of processing instead of deletion.",
+      "case4": "If you have filed an objection under Art. 21 (1) GDPR, a balancing of interests must be conducted. Until it is determined whose interests prevail, you have the right to request the restriction of processing of your personal data.",
+      "final": "If you have restricted the processing of your personal data, such data may only be processed – apart from storage – with your consent or for the establishment, exercise, or defense of legal claims, or to protect the rights of another natural or legal person, or for reasons of an important public interest of the European Union or a member state."
+    },
+    "sslEncryption": {
+      "title": "SSL or TLS Encryption",
+      "info": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us as the website operator, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the change in the address bar of the browser from 'http://' to 'https://' and the padlock symbol in your browser bar.",
+      "protection": "If SSL or TLS encryption is enabled, the data you transmit to us cannot be read by third parties.",
+      "source": "Source"
+    },
+    "title": "Translation Demo"
   }
 }

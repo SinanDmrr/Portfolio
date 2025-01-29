@@ -1,21 +1,18 @@
 @use "../../styles.scss" as *;
 
 #imprint-section {
-  flex: 1;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 2rem;
 
   #imprint {
-    h1 {
-      font-family: $header-font;
-      font-weight: $header-font-weight;
-      font-size: 3rem;
-    }
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1,
     h2 {
       font-family: $header-font;
       font-weight: $header-font-weight;
