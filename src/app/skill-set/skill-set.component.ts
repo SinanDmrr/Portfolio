@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { ISkill } from '../interfaces/iskill';
 
 @Component({
   selector: 'app-skill-set',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
 })

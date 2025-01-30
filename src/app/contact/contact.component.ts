@@ -41,14 +41,18 @@ export class ContactComponent {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
-          next: (response) => {
-            alert('Nachricht versendet');
-            ngForm.resetForm();
+          next: (response: any) => {
+            if (response?.success) {
+              alert('Nachricht versendet');
+              ngForm.resetForm();
+            } else {
+              alert('Fehler - Bitte versuchen Sie es später erneut');
+            }
           },
           error: (error) => {
             console.error(error);
+            alert('Serverfehler - Bitte kontaktieren Sie uns direkt');
           },
-          complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       alert('Nachricht versendet');
