@@ -3,11 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import {
-  TranslateService,
-  TranslatePipe,
-  TranslateDirective,
-} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
