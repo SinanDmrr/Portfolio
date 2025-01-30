@@ -4,11 +4,12 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [TranslatePipe, FormsModule, CommonModule],
+  imports: [TranslatePipe, FormsModule, CommonModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -22,8 +23,8 @@ export class ContactComponent {
   };
 
   isChecked: boolean = false;
-
-  mailTest = true;
+  //Muss auf FALSE damit der echte Versand funktioniert
+  mailTest = false;
 
   post = {
     endPoint: 'https://demirdeveloper.com/sendMail.php',
@@ -43,6 +44,7 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            alert('Nachricht versendet');
           },
           error: (error) => {
             console.error(error);
@@ -50,7 +52,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log(this.contactData);
+      alert('Nachricht versendet');
       ngForm.resetForm();
     }
   }

@@ -15,6 +15,7 @@
         <span>{{ "contact.thirdparagraph" | translate }}</span>
       </p>
     </div>
+
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div class="input-group">
         <label for="name" [ngClass]="{ 'hidden-label': !contactData.name }">{{
@@ -108,7 +109,7 @@
         <label for="checkbox">
           {{ "contact.firstcheckbox" | translate }}
           <span
-            ><a href="" target="_blank">{{
+            ><a [routerLink]="'/privacypolicy'" target="_blank">{{
               "contact.secondcheckbox" | translate
             }}</a></span
           >

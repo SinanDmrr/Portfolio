@@ -17,7 +17,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $email = $params->email;
             $name = $params->name;
             $message = $params->message;
-            //TODO Hier eigene Mail eingeben an die die Mails kommen soll vom Form
             $recipient = 'sinan-demir@hotmail.com';  
             $subject = "Contact From <$email>";
             $message = "From:" . $name . "<br>" . $message ;

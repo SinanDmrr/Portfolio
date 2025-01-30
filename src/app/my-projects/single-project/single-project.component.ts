@@ -5,7 +5,7 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 @Component({
   selector: 'app-single-project',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss',
 })

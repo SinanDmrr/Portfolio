@@ -4,8 +4,10 @@
     <div id="name-policy-container">
       <h3>&copy; Sinan Demir 2025</h3>
       <div id="legal-notice">
-        <a [routerLink]="'/imprint'">{{ "footer.imprint" | translate }}</a>
-        <a [routerLink]="'/privacypolicy'">{{
+        <a [routerLink]="['/imprint']" target="_blank">{{
+          "footer.imprint" | translate
+        }}</a>
+        <a [routerLink]="['/privacypolicy']" target="_blank">{{
           "footer.privacypolicy" | translate
         }}</a>
       </div>

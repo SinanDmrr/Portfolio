@@ -71,15 +71,26 @@
       @include flex-layout(start, column);
       width: 50%;
       min-width: 300px;
+
+      button {
+        margin-top: -1rem;
+        height: 4rem;
+        width: 10rem;
+        font-size: 2rem;
+      }
       #checkbox {
+        margin-top: 1rem;
         display: flex;
         gap: 1rem;
-        margin: 1rem 0;
         cursor: pointer;
+
         input[type="checkbox"] {
           width: auto;
+          margin-bottom: 4rem;
         }
+
         label[for="checkbox"] {
+          margin-top: 1rem;
           font-size: 0.8rem;
           span {
             color: $primary-color;

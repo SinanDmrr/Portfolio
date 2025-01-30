@@ -24,16 +24,14 @@ export class MyProjectsComponent {
       header: 'El Pollo Loco',
       skills: ['JavaScript', 'HTML', 'SCSS'],
       githubPath: 'https://github.com/SinanDmrr/El-Pollo-Loco',
-      liveTestPath:
-        'https://sinan-demir.developerakademie.net/Modul%2012/El%20Pollo%20Loco/index.html',
+      liveTestPath: 'https://elpololoco.developerdemir.com/',
     },
     {
       img: 'assets/images/pokedex.png',
-      header: 'Join',
+      header: 'Pokedex',
       skills: ['JavaScript', 'HTML', 'SCSS', 'API'],
       githubPath: 'https://github.com/SinanDmrr/pokedex',
-      liveTestPath:
-        'https://sinan-demir.developerakademie.net/Modul%209/Pokedex/index.html',
+      liveTestPath: 'https://pokedex.developerdemir.com/',
     },
   ];
 }

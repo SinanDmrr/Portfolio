@@ -14,7 +14,7 @@
     text-align: center;
     line-height: 1;
     text-shadow: $text-shadow;
-    width: 95%;
+    width: 100%;
   }
 
   h2 {
@@ -28,15 +28,14 @@
   }
 
   #references {
-    width: 95%;
-    min-width: 300px;
-    @include flex-layout(center);
+    @include flex-layout(center, row, center);
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
 
     div {
       min-width: 300px;
+      margin: 0 auto;
     }
 
     .name {
