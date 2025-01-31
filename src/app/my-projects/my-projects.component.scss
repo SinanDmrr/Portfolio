@@ -1,6 +1,7 @@
 @use "../../styles.scss" as *;
 
 #projects {
+  overflow: hidden;
   position: relative;
   margin: 0 auto;
   width: 100%;

@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { IProject } from '../interfaces/iproject';
 import { SingleProjectComponent } from './single-project/single-project.component';
+import * as AOS from 'aos';
 import 'aos/dist/aos.css';
 
 @Component({
@@ -11,7 +12,7 @@ import 'aos/dist/aos.css';
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss',
 })
-export class MyProjectsComponent {
+export class MyProjectsComponent implements OnInit, AfterViewInit {
   projects: IProject[] = [
     {
       img: 'assets/images/join.png',
@@ -35,4 +36,19 @@ export class MyProjectsComponent {
       liveTestPath: 'https://pokedex.developerdemir.com/',
     },
   ];
+
+  ngOnInit() {
+    setTimeout(() => {
+      AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: false,
+        offset: 100,
+      });
+    }, 300);
+  }
+
+  ngAfterViewInit() {
+    AOS.refresh();
+  }
 }

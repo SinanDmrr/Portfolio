@@ -22,11 +22,11 @@ $main-font-weight: 400;
 
 html {
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .padding-left-right {
