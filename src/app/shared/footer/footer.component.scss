@@ -6,6 +6,7 @@
   background: linear-gradient(45deg, $primary-color, $secondary-color);
   padding: 2rem;
   color: white;
+
   #footer-content {
     @include flex-layout(space-between);
     width: 100%;

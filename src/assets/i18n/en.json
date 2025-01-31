@@ -34,6 +34,7 @@
     "labelemail": "Email: ",
     "labelmessage": "Message: ",
     "btntext": "Senden",
+    "successmessage": "Your message has been sent!",
     "title": "Translation Demo"
   },
   "main-component": {

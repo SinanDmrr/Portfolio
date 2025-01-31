@@ -40,10 +40,20 @@ export class HeaderComponent implements OnInit {
 
   toggleLanguage(): void {
     this.currentLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
+    localStorage.setItem('userLanguage', this.currentLanguage);
     this.translate.use(this.currentLanguage);
   }
 
   ngOnInit(): void {
+    const savedLang = localStorage.getItem('userLanguage');
+    if (savedLang) {
+      this.currentLanguage = savedLang;
+      this.translate.use(savedLang);
+    } else {
+      this.currentLanguage = 'en';
+      this.translate.use('en');
+    }
+
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         const urlWithoutFragment = event.url.split('#')[0];

@@ -2,8 +2,7 @@
 
 #section-references {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flex-layout(center, column, center);
   background: linear-gradient(45deg, $primary-color, $secondary-color);
   padding: 5rem;
   color: white;
@@ -29,12 +28,14 @@
 
   #references {
     @include flex-layout(center, row, center);
+    max-width: 1920px;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
 
     div {
       min-width: 300px;
+      max-width: 500px;
       margin: 0 auto;
     }
 

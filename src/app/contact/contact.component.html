@@ -16,115 +16,127 @@
       </p>
     </div>
 
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <div class="input-group">
-        <label for="name" [ngClass]="{ 'hidden-label': !contactData.name }">{{
-          "contact.labelname" | translate
-        }}</label>
-        <div class="input-container">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            [placeholder]="'contact.nameplaceholder' | translate"
-            [(ngModel)]="contactData.name"
-            #name="ngModel"
-            required
-          />
-          <span class="icon">
-            <ng-container *ngIf="name.valid && name.touched">✅</ng-container>
-            <ng-container *ngIf="!name.valid && name.touched">❌</ng-container>
-          </span>
+    @if (!formSubmitted) {
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="input-group">
+          <label for="name" [ngClass]="{ 'hidden-label': !contactData.name }">{{
+            "contact.labelname" | translate
+          }}</label>
+          <div class="input-container">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              [placeholder]="'contact.nameplaceholder' | translate"
+              [(ngModel)]="contactData.name"
+              #name="ngModel"
+              required
+            />
+            <span class="icon">
+              <ng-container *ngIf="name.valid && name.touched">✅</ng-container>
+              <ng-container *ngIf="!name.valid && name.touched"
+                >❌</ng-container
+              >
+            </span>
+          </div>
+          <div class="error" *ngIf="!name.valid && name.touched">
+            {{ "contact.nameerror" | translate }}
+          </div>
         </div>
-        <div class="error" *ngIf="!name.valid && name.touched">
-          {{ "contact.nameerror" | translate }}
-        </div>
-      </div>
 
-      <div class="input-group">
-        <label for="email" [ngClass]="{ 'hidden-label': !contactData.email }">{{
-          "contact.labelemail" | translate
-        }}</label>
-        <div class="input-container">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            [placeholder]="'contact.emailplaceholder' | translate"
-            [(ngModel)]="contactData.email"
-            #email="ngModel"
-            required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-          />
-          <span class="icon">
-            <ng-container *ngIf="email.valid && email.touched">✅</ng-container>
-            <ng-container *ngIf="!email.valid && email.touched"
-              >❌</ng-container
-            >
-          </span>
-        </div>
-        <div class="error" *ngIf="!email.valid && email.touched">
-          {{ "contact.emailerror" | translate }}
-        </div>
-      </div>
-
-      <div class="input-group">
-        <label
-          for="message"
-          [ngClass]="{ 'hidden-label': !contactData.message }"
-          >{{ "contact.labelmessage" | translate }}</label
-        >
-        <div class="input-container">
-          <textarea
-            id="message"
-            name="message"
-            [placeholder]="'contact.messageplaceholder' | translate"
-            [(ngModel)]="contactData.message"
-            #message="ngModel"
-            minlength="5"
-            required
-          ></textarea>
-          <span class="icon">
-            <ng-container *ngIf="message.valid && message.touched"
-              >✅</ng-container
-            >
-            <ng-container *ngIf="!message.valid && message.touched"
-              >❌</ng-container
-            >
-          </span>
-        </div>
-        <div class="error" *ngIf="!message.valid && message.touched">
-          {{ "contact.messageerror" | translate }}
-        </div>
-      </div>
-
-      <div id="checkbox">
-        <input
-          type="checkbox"
-          id="checkbox"
-          name="checkbox"
-          [(ngModel)]="isChecked"
-          required
-        />
-        <label for="checkbox">
-          {{ "contact.firstcheckbox" | translate }}
-          <span
-            ><a [routerLink]="'/privacypolicy'" target="_blank">{{
-              "contact.secondcheckbox" | translate
-            }}</a></span
+        <div class="input-group">
+          <label
+            for="email"
+            [ngClass]="{ 'hidden-label': !contactData.email }"
+            >{{ "contact.labelemail" | translate }}</label
           >
-          {{ "contact.thirdcheckbox" | translate }}
-        </label>
-      </div>
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              [placeholder]="'contact.emailplaceholder' | translate"
+              [(ngModel)]="contactData.email"
+              #email="ngModel"
+              required
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            />
+            <span class="icon">
+              <ng-container *ngIf="email.valid && email.touched"
+                >✅</ng-container
+              >
+              <ng-container *ngIf="!email.valid && email.touched"
+                >❌</ng-container
+              >
+            </span>
+          </div>
+          <div class="error" *ngIf="!email.valid && email.touched">
+            {{ "contact.emailerror" | translate }}
+          </div>
+        </div>
 
-      <button
-        class="primary-btn"
-        type="submit"
-        [ngClass]="{ 'primary-btn': isChecked, 'disabled-btn': !isChecked }"
-        [disabled]="!isChecked || !contactForm.form.valid"
-      >
-        {{ "contact.btntext" | translate }}
-      </button>
-    </form>
+        <div class="input-group">
+          <label
+            for="message"
+            [ngClass]="{ 'hidden-label': !contactData.message }"
+            >{{ "contact.labelmessage" | translate }}</label
+          >
+          <div class="input-container">
+            <textarea
+              id="message"
+              name="message"
+              [placeholder]="'contact.messageplaceholder' | translate"
+              [(ngModel)]="contactData.message"
+              #message="ngModel"
+              minlength="5"
+              required
+            ></textarea>
+            <span class="icon">
+              <ng-container *ngIf="message.valid && message.touched"
+                >✅</ng-container
+              >
+              <ng-container *ngIf="!message.valid && message.touched"
+                >❌</ng-container
+              >
+            </span>
+          </div>
+          <div class="error" *ngIf="!message.valid && message.touched">
+            {{ "contact.messageerror" | translate }}
+          </div>
+        </div>
+
+        <div id="checkbox">
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            [(ngModel)]="isChecked"
+            required
+          />
+          <label for="checkbox">
+            {{ "contact.firstcheckbox" | translate }}
+            <span
+              ><a [routerLink]="'/privacypolicy'" target="_blank">{{
+                "contact.secondcheckbox" | translate
+              }}</a></span
+            >
+            {{ "contact.thirdcheckbox" | translate }}
+          </label>
+        </div>
+
+        <button
+          class="primary-btn"
+          type="submit"
+          [ngClass]="{ 'primary-btn': isChecked, 'disabled-btn': !isChecked }"
+          [disabled]="!isChecked || !contactForm.form.valid"
+        >
+          {{ "contact.btntext" | translate }}
+        </button>
+      </form>
+    } @else {
+      <div class="success-message">
+        {{ "contact.successmessage" | translate }}
+      </div>
+    }
   </div>
 </section>

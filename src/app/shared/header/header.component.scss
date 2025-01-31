@@ -1,5 +1,8 @@
 @use "../../../styles.scss" as *;
-
+#header-section {
+  background: linear-gradient(45deg, $primary-color, $secondary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 header {
   transform: translateX(-50%);
   max-width: 1920px;
@@ -21,12 +24,13 @@ header {
   }
 
   &.secondary-page-header {
-    position: relative;
+    #header-section {
+      background: none;
+    }
+    margin: 0 auto;
     transform: translateX(0%);
     width: 100%;
     left: 0;
-    background: linear-gradient(45deg, $primary-color, $secondary-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     a {
       color: white;
     }
@@ -172,6 +176,11 @@ header {
     height: 100vh;
     @include flex-layout(center, column, center);
     gap: 2rem;
+
+    #icons {
+      display: flex;
+      gap: 1rem;
+    }
     a {
       position: relative;
       transition: transform 0.3s ease;

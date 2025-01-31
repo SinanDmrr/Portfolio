@@ -2,6 +2,16 @@
 
 #privacypolicy-section {
   margin: 24px 12px;
-  height: 500px;
+  height: 75vh;
   overflow-y: auto;
+  @include flex-layout(start, column, start);
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  #privacypolicy-section {
+    height: 65vh;
+  }
 }

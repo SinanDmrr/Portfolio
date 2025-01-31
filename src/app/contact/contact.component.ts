@@ -35,6 +35,7 @@ export class ContactComponent {
   };
 
   mailTest = false;
+  formSubmitted: boolean = false;
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
@@ -43,8 +44,11 @@ export class ContactComponent {
         .subscribe({
           next: (response: any) => {
             if (response?.success) {
-              alert('Nachricht versendet');
               ngForm.resetForm();
+              this.formSubmitted = true;
+              setTimeout(() => {
+                this.formSubmitted = false;
+              }, 3000);
             } else {
               alert('Fehler - Bitte versuchen Sie es später erneut');
             }
@@ -55,9 +59,12 @@ export class ContactComponent {
           },
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      alert('Nachricht versendet');
       console.log(this.contactData);
+      this.formSubmitted = true;
       ngForm.resetForm();
+      setTimeout(() => {
+        this.formSubmitted = false;
+      }, 3000);
     }
   }
 

@@ -1,6 +1,7 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IProject } from '../../interfaces/iproject';
-import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-single-project',
