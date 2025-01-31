@@ -158,9 +158,9 @@
         .input-container {
           position: relative;
           width: 100%;
-
           input,
           textarea {
+            font-family: inherit;
             width: 100%;
             border: 1px solid $primary-color;
             border-radius: 10px;
@@ -171,6 +171,7 @@
           }
 
           textarea {
+            font-family: inherit;
             min-height: 2rem;
             max-height: 20rem;
             resize: vertical;
