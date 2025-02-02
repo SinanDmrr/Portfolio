@@ -10,7 +10,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $senderName = $params->name;
         $senderMessage = $params->message;
     
-        $recipient = 'sinan-demir@hotmail.com';
+        $recipient = 'info@developerdemir.com';
         $subjectToYou = "Neue Kontaktanfrage von $senderName";
         $messageToYou = "Von: $senderName ($senderEmail)<br><br>$senderMessage";
         
