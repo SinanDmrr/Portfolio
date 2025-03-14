@@ -18,8 +18,8 @@ export class MyProjectsComponent implements OnInit, AfterViewInit {
       img: 'assets/images/join.png',
       header: 'Join',
       skills: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'Firebase'],
-      githubPath: '',
-      liveTestPath: '',
+      githubPath: 'https://github.com/SinanDmrr/Join',
+      liveTestPath: 'https://join.developerdemir.com/',
     },
     {
       img: 'assets/images/el-polo-loco.png',
