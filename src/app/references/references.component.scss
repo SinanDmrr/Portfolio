@@ -27,16 +27,35 @@
   }
 
   #references {
-    @include flex-layout(center, row, center);
+    @include flex-layout(center, row, justify);
     max-width: 1920px;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 2rem;
 
     div {
       min-width: 300px;
       max-width: 500px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+      a {
+        color: white;
+        font-size: 2rem;
+        font-family: $header-font;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        text-decoration: none;
+      }
+
+      img {
+        height: 1.6rem;
+        vertical-align: bottom;
+      }
     }
 
     .name {
@@ -44,11 +63,11 @@
       font-size: 1.5rem;
     }
     .project {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     .ref {
       font-style: italic;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 }
