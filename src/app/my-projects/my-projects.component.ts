@@ -15,6 +15,13 @@ import 'aos/dist/aos.css';
 export class MyProjectsComponent implements OnInit, AfterViewInit {
   projects: IProject[] = [
     {
+      img: 'assets/images/da-bubble.png',
+      header: 'DABubble',
+      skills: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'Firebase'],
+      githubPath: '#',
+      liveTestPath: '#',
+    },
+    {
       img: 'assets/images/join.png',
       header: 'Join',
       skills: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'Firebase'],

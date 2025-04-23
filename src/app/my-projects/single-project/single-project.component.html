@@ -17,6 +17,10 @@
       <p class="description">
         {{ "projects.thirdprojecttext" | translate }}
       </p>
+    } @else if (index === 3) {
+      <p class="description">
+        {{ "projects.fourthprojecttext" | translate }}
+      </p>
     } @else {
       <p class="description">{{ "projects.noinfo" | translate }}</p>
     }
