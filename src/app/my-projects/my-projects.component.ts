@@ -18,8 +18,8 @@ export class MyProjectsComponent implements OnInit, AfterViewInit {
       img: 'assets/images/da-bubble.png',
       header: 'DABubble',
       skills: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'Firebase'],
-      githubPath: '#',
-      liveTestPath: '#',
+      githubPath: 'https://github.com/SinanDmrr/dabubble',
+      liveTestPath: 'https://dabubble.developerdemir.com/',
     },
     {
       img: 'assets/images/join.png',
