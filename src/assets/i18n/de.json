@@ -57,9 +57,11 @@
     "header": "Teamplay benötigt?",
     "secondheader": "Hier können Sie das Feedback meiner Kollegen über mich sehen",
     "project": "Projekt",
-    "firstfeedback": "Durch seine Ausbildung zum Fachinformatiker verfügt Sinan bereits über wertvolle Erfahrung in der Softwareentwicklung. Sein fundiertes Wissen sowie seine strukturierte und effiziente Arbeitsweise machen ihn zu einem geschätzten und verlässlichen Teamplayer.",
-    "secondfeedback": "Sinan brachte als ausgebildeter Fachinformatiker wertvolle Erfahrung in die Softwareentwicklung ein. Mit präzisen Lösungen und effizientem Handeln unterstützte er uns zuverlässig bei der Problemlösung und trieb unsere Projekte entscheidend voran. Ein verlässlicher Kollege, auf den wir stets zählen konnten.",
-    "thirdfeedback": "Sinan ist ein zuverlässiger und freundlicher Mensch. Arbeitet strukturiert und schreibt einen klaren Code. Ich kann sie als Kollegin sehr empfehlen.",
+    "firstfeedback": "Sinan arbeitet sich mühelos in komplexe Code Architekturen ein und zeigt dabei ein tiefes Verständnis für Zusammenhänge. Durch seine Erfahrung in verschiedenen Programmiersprachen geht er strukturiert an Problemstellungen ran. Seine unkomplizierte und freundliche Art machen eine Zusammenarbeit zudem sehr angenehm.",
+    "secondfeedback": "Mit seinen durchdachten Ideen und dem fundierten Fachwissen aus seiner Ausbildung zum Fachinformatiker trug Sinan maßgeblich zum Erfolg unseres Projekts bei. Seine kluge und sympathische Art machte die Zusammenarbeit mit ihm besonders angenehm.",
+    "thirdfeedback": "",
+    "fourthfeedback": "Durch seine Ausbildung zum Fachinformatiker verfügt Sinan bereits über wertvolle Erfahrung in der Softwareentwicklung. Sein fundiertes Wissen sowie seine strukturierte und effiziente Arbeitsweise machen ihn zu einem geschätzten und verlässlichen Teamplayer.",
+    "fifthfeedback": "Sinan brachte als ausgebildeter Fachinformatiker wertvolle Erfahrung in die Softwareentwicklung ein. Mit präzisen Lösungen und effizientem Handeln unterstützte er uns zuverlässig bei der Problemlösung und trieb unsere Projekte entscheidend voran. Ein verlässlicher Kollege, auf den wir stets zählen konnten.",
     "title": "Übersetzung Deutsch"
   },
   "skill-set": {
