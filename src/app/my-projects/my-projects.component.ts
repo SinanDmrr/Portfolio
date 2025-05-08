@@ -29,6 +29,13 @@ export class MyProjectsComponent implements OnInit, AfterViewInit {
       liveTestPath: 'https://join.developerdemir.com/',
     },
     {
+      img: 'assets/images/rezeptomat.png',
+      header: 'Rezeptomat',
+      skills: ['React', 'TypeScript', 'HTML', 'SCSS'],
+      githubPath: 'https://github.com/SinanDmrr/rezeptomat',
+      liveTestPath: 'https://rezeptomat.developerdemir.com/',
+    },
+    {
       img: 'assets/images/el-polo-loco.png',
       header: 'El Pollo Loco',
       skills: ['JavaScript', 'HTML', 'SCSS'],
